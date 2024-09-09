@@ -5,34 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishan Karki's Portfolio</title>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; text-align: center;">
-    <header style="background-color: #333; color: #fff; padding: 1rem;">
-        <h1 style="margin: 0;">Ishan Karki</h1>
-        <p style="margin: 0;">Junior MERN Stack Developer</p>
+<body style="font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333;">
+
+    <!-- Header Section -->
+    <header style="background-color: #333; color: white; padding: 2rem; text-align: center;">
+        <h1 style="margin: 0; font-size: 3rem;">Ishan Karki</h1>
+        <p style="margin: 0; font-size: 1.2rem;">Junior MERN Stack Developer</p>
     </header>
 
-    <section style="padding: 2rem;">
-        <h2 style="color: #333;">About Me</h2>
-        <p>Hello! I'm Ishan Karki, a junior MERN stack developer passionate about building dynamic and interactive web applications. I'm currently exploring new technologies and looking forward to pursuing a master's degree in the future.</p>
+    <!-- Navigation Bar -->
+    <nav style="background-color: #444; padding: 1rem; text-align: center;">
+        <a href="#about" style="color: white; text-decoration: none; margin: 0 1rem;">About</a>
+        <a href="#portfolio" style="color: white; text-decoration: none; margin: 0 1rem;">Portfolio</a>
+        <a href="#education" style="color: white; text-decoration: none; margin: 0 1rem;">Education</a>
+        <a href="#contact" style="color: white; text-decoration: none; margin: 0 1rem;">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 4rem 2rem; text-align: center;">
+        <h2 style="font-size: 2.5rem; color: #444;">About Me</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 1rem auto;">Hi! I'm Ishan Karki, a junior MERN stack developer passionate about building dynamic, user-friendly web applications. My journey in web development started with a curiosity about how the web works, which eventually turned into a passion. I’m currently honing my skills while looking forward to pursuing a master's degree in Computer Science to expand my knowledge.</p>
     </section>
 
-    <section style="background-color: #eee; padding: 2rem;">
-        <h2 style="color: #333;">Projects</h2>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <div style="background-color: #fff; margin: 1rem; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); width: 80%;">
-                <h3>Rock-Paper-Scissors Game</h3>
-                <p>A simple rock-paper-scissors game built using React. Users can play against the computer and see the results instantly.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" style="background-color: #f1f1f1; padding: 4rem 2rem;">
+        <h2 style="font-size: 2.5rem; color: #444; text-align: center;">Portfolio</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
+            <!-- Project 1 -->
+            <div style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px;">
+                <h3 style="color: #333;">Rock-Paper-Scissors Game</h3>
+                <p>A fun, interactive game built using React. Users can challenge the computer in a classic match of Rock-Paper-Scissors and see instant results.</p>
+            </div>
+            <!-- Project 2 -->
+            <div style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px;">
+                <h3 style="color: #333;">Weather App</h3>
+                <p>A weather application that fetches real-time data using APIs, built with React and Node.js. Users can get weather updates for any city in the world.</p>
             </div>
         </div>
     </section>
 
-    <section style="padding: 2rem;">
-        <h2 style="color: #333;">Contact</h2>
-        <p>If you'd like to get in touch with me, please feel free to reach out via email: <a href="mailto:ishan.karki@example.com" style="color: #007bff; text-decoration: none;">ishan.karki@example.com</a></p>
+    <!-- Education Section -->
+    <section id="education" style="padding: 4rem 2rem; text-align: center;">
+        <h2 style="font-size: 2.5rem; color: #444;">Education</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <h3 style="font-size: 1.8rem; color: #333;">Bachelor's Degree in Computer Science</h3>
+            <p>XYZ University - Graduated 2023</p>
+            <ul style="font-size: 1.2rem;">
+                <li>GPA: 3.8</li>
+                <li>Relevant Courses: Data Structures, Web Development, Algorithms, Databases</li>
+                <li>Projects: Developed a complete e-commerce application as part of a team project.</li>
+            </ul>
+
+            <h3 style="font-size: 1.8rem; color: #333; margin-top: 2rem;">High School</h3>
+            <p>ABC High School - Graduated 2019</p>
+            <ul style="font-size: 1.2rem;">
+                <li>Graduated with Distinction</li>
+            </ul>
+        </div>
     </section>
 
-    <footer style="background-color: #333; color: #fff; padding: 1rem;">
-        <p style="margin: 0;">&copy; 2024 Ishan Karki</p>
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #444; color: white; padding: 4rem 2rem;">
+        <h2 style="font-size: 2.5rem; text-align: center;">Contact Me</h2>
+        <p style="font-size: 1.2rem; text-align: center;">Feel free to reach out if you'd like to collaborate or have any questions!</p>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" name="name" placeholder="Your Name" style="padding: 1rem; border: none; border-radius: 4px; font-size: 1rem;">
+                <input type="email" name="email" placeholder="Your Email" style="padding: 1rem; border: none; border-radius: 4px; font-size: 1rem;">
+                <textarea name="message" rows="4" placeholder="Your Message" style="padding: 1rem; border: none; border-radius: 4px; font-size: 1rem;"></textarea>
+                <button type="submit" style="padding: 1rem; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 1rem;">
+        <p style="margin: 0;">&copy; 2024 Ishan Karki | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
